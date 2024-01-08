@@ -23,4 +23,7 @@ sealed class Screen(
     data object UpComing : Screen("upcoming_screen")
     data object NavigationDrawer :
         Screen("navigation_drawer", objectName = "genreId", objectPath = "/{genreId}")
+
+    data object MovieDetail :
+        Screen("movie_detail_screen", objectName = "movieItem", objectPath = "/{movieItem}")
 }
